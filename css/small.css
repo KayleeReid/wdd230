@@ -14,9 +14,8 @@ header{
 }
 
 header img{
-    float: right;
     width: 200px;
-    border-radius: 10px;
+    height:auto;
     }
 
 h1{
@@ -39,5 +38,4 @@ footer{
     font-size: 12pt;
     padding: 1rem;
     text-align: center;
-    border-radius: 10px;
 }
