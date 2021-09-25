@@ -9,8 +9,7 @@ max-width: 860px
 }
 
 header{
-    background-color:rgb(3, 80, 3);
-    padding: 1.5rem;
+    margin-top: 10px;
 }
 
 header img{
@@ -32,10 +31,12 @@ main{
     font-family: 'Prata', serif;
 }
 
-footer{
+header, footer{
     background-color: rgb(3,80,3);
     color:whitesmoke;
-    font-size: 12pt;
     padding: 1rem;
     text-align: center;
+}
+footer{
+    font: size 0.8rem;
 }
