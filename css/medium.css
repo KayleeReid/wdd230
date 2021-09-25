@@ -1,0 +1,12 @@
+@media screen (mid-width:32.5em){
+    h1{
+        font-size: 2.5rem;
+        color:whitesmoke;
+        text-align: center;
+        font-family: 'Yeseva One', cursive;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
