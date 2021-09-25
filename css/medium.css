@@ -1,12 +1,18 @@
-@media (mid-width: 32.5em){
+@media (min-width: 32.5em){
     h1{
         font-size: 2.5rem;
-        color:whitesmoke;
-        text-align: center;
-        font-family: 'Yeseva One', cursive;
     }
 
     h2{
         font-size: 1.5rem;
     }
+    footer{
+        border-radius: 10px;
+    }
+    header img{
+        float: right;
+        width: 200px;
+        border-radius: 0 10px 0 0;
+        box-shadow: 0 0 30px #444;
+        }
 }
