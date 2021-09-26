@@ -11,6 +11,10 @@ main {
     height: auto;
     width: fit-content;
 }
+img{
+    max-width: 500rem;
+}
+
 
 /* Two Rows ******************************/
 @media only screen and (min-width: 37.5em) {
