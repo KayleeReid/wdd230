@@ -2,18 +2,16 @@ body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
-/* phone or baseline views **************************/
+/* Phone View **************************/
 main {
-	max-width: 767px;
-	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+	text-align: center;
+    object-fit: scale-down;
+    height: auto;
+    width: fit-content;
 }
 
-main section h2 {
-	color: #536878;
-}
 
 main section {
 	margin: 0.5rem;
@@ -22,16 +20,11 @@ main section {
 	background-color: #eee;
 }
 
-main section:nth-child(2) {
-	display: none;
-	margin: 0.5rem;
-}
-
 .colimage {
 	box-shadow: 0 0 30px #333;
 }
 
-/* Tablet Views ******************************/
+/* Tablet View ******************************/
 @media only screen and (min-width: 37.5em) {
 	main {
 		grid-template-columns: 1fr 1fr;
@@ -55,7 +48,7 @@ main section:nth-child(2) {
 	}
 }
 
-/* Desktop Views ****************************/
+/* Desktop View ****************************/
 @media only screen and (min-width: 60em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
