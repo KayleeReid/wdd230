@@ -1,0 +1,118 @@
+
+@charset "UTF-8"; /* not necessary */
+/* bluegrey matter   #637f80 light  #536872  #708090  #536878  #36454f dark */
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+
+/* phone or baseline views **************************/
+header,
+footer {
+	background-color: #bed;
+	display: block;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 100%;
+	margin: 0 auto;
+    padding: .5rem;
+}
+
+h1 {
+	font-size: 1.1rem;
+}
+h2 {
+	color: #536878;
+    text-align: center;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top / var(--d, 0) 10px no-repeat;
+  transition: 0.5s;
+}
+nav a:hover {
+/* 	background-color: #bbb;
+	color: #36454f; */
+	--d: 75%;
+}
+.active {
+	color: yellow;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+main header {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+main picture {
+	display: none;
+	margin: 0.5rem;
+}
+
+footer {
+	flex: 0 1 100%;
+	height: 2rem;
+}
+
+/* Color Scheme Page ***/
+
+main{
+    width: 75%;
+}
+main table{
+    width:100%;
+    box-shadow: 0 0 2px #333;
+}
+main table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    padding:5px
+}
+.black{
+    background-color: #000000;
+    color:white;
+}
+.morning-blue{
+    background-color: #839788;
+    color: white;
+}
+.champagne{
+    background-color: #eee0cb;
+}
+.grullo{
+    background-color: #BAA898;
+}
+.beau-blue{
+    background-color: #bfd7ea;
+}
