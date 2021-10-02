@@ -3,7 +3,7 @@
 
 body {
 	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background-color:#839788;
 	max-width: 800px;
 	color:#000000;
@@ -32,6 +32,9 @@ nav {
 	box-shadow: 0 2px 15px gray;
 	color:#000000;
 }
+nav ul li{
+	list-style-type: none;
+}
 
 main {
 	padding: .5rem 1rem;
@@ -42,6 +45,7 @@ h1 h2 {
 	font-size:1.25rem;
 	color: #000000;
     text-align: center;
+	font-family: 'Alegreya', serif;
 }
 nav ul {
 	margin: 0;
@@ -64,7 +68,8 @@ main section {
 footer {
 	padding: .5rem .5rem;
 	margin-top: 1rem;
-	border-top: 5px #BAA898;
+	background-color: #BAA898;
+	text-align: center;
 }
 /*End of Home Page***************/
 
