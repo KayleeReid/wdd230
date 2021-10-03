@@ -16,12 +16,4 @@
 	article:nth-child(3) {
 		grid-column: span 2;
 	}
-	main picture {
-		display: block;
-	}
-	main picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
 }
