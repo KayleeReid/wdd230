@@ -18,11 +18,12 @@ header img{
     width: 50px;
     height:auto;
     }
-
+h1 h2{
+    font-family: 'Alegreya', serif;
+}
 h1{
     font-size: 1.5rem;
     color:whitesmoke;
-    font-family: 'Yeseva One', cursive;
 }
 h2{
     font-size: 1rem;
@@ -30,7 +31,7 @@ h2{
     margin-left: .5rem;
 }
 main{
-    font-family: 'Prata', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header, footer{
