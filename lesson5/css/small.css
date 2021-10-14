@@ -141,7 +141,11 @@ body{
 .weathersummary p {
 	line-height: .5;
 }
-
+.active{
+	text-transform: uppercase;
+	
+	border-bottom: 1px solid #000000;
+}
 /*Five Day Forcast***********************/
 .forcastdiv{
 	background: #EEE0CB;
@@ -167,6 +171,8 @@ body{
 	background-color: #BFD7EA;
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
+	border-top: 1px solid #333;
+    border-right: 1px solid #333;
 	text-align: center;
 }
  
@@ -175,9 +181,7 @@ body{
 	background-color: #EEE0CB;
 	color: #000000;
 }
-.flex  {
-	border-right: 1px solid #333;
-}
+
 
 
  .col-head {
