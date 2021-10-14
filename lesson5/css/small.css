@@ -69,6 +69,7 @@ nav {
 	background-color: #EEE0CB;
 }
 
+
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
 */
@@ -81,13 +82,7 @@ h2{
 	text-align: center;
 	font-weight: bold;
 }
-.placeholder{
-	max-width: 850px;
-	background-color: #BAA898;
-	border: 1px solid;
-	margin: 10px auto;
-	padding: 10px;
-}
+
 
 /*footer*************/
 footer {
@@ -107,7 +102,8 @@ h1{
 }
 h2{
 	font-family: 'Permanent Marker', cursive;
-	text-shadow: 2px 2px #839788;
+	text-shadow: 1px 1px #839788;
+	padding-top: 15px;
 }
 body{
 	font-family: 'Hind Madurai', sans-serif;
@@ -125,7 +121,6 @@ body{
 .hero-image img{
 	margin: 10px auto;
 	background-color: #BAA898;
-	border: 1px solid #000;
 	width:100%;
 	height: 300px;
 	margin: auto;
@@ -138,11 +133,99 @@ body{
 	left: 50px;
 	background: #EEE0CB;
 	padding:.5rem;
-	box-shadow: 0 0 30px #777;
+	box-shadow: 0 0 30px #839788;
 	opacity: 0.8;
 	
 }
 
 .weathersummary p {
 	line-height: .5;
+}
+
+/*Five Day Forcast***********************/
+.forcastdiv{
+	background: #EEE0CB;
+	
+	width: 960px;
+	height: 150px;
+	margin: 20px auto;
+	position: relative;
+	box-shadow: 0 0 10px #839788;
+	
+}
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+	padding: 0 20px;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: #BFD7EA;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+ 
+.flex-col:hover {
+	
+	background-color: #EEE0CB;
+	color: #000000;
+}
+.flex  {
+	border-right: 1px solid #333;
+}
+
+
+ .col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid ;
+	text-align: center;
+}
+
+.flex img {
+	border-radius: 100px;
+	padding: 0.25rem;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.col-head  {
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: #BAA898;
+	color: white;
+}
+
+ 
+/*Activity*******************************/
+.activitydiv{
+	margin: 20px auto;
+	position: relative;
+	width: 960px;
+	height: 300px;
+	box-shadow: 0 0 10px #839788;
+	margin-top: 50px;
+	
+}
+
+.activity-image img{
+	margin: 15.5px;
+	border: solid #839788;
+	width:25rem;
+	height: auto;
+	float: right;
+}
+.activitydiv p {
+
+	padding: 0 0 0 30px;
 }
