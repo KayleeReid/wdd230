@@ -5,7 +5,11 @@ body {
 }
 /*message that shows on fridays*/
 .message{
-	
+	background-color: #839788;
+	padding:10px;
+	margin:10px auto;
+	font-size: 20px;
+	text-align: center;
 }
 
 /*end of message*/
@@ -91,10 +95,10 @@ h2{
 
 /*footer*************/
 footer {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin:auto;
 	background-color:#BFD7EA;
-	padding: 5px 0;
+	padding: 2px 0;
 	align-items:center;
 	justify-content:center;
 	text-align: center;
@@ -119,7 +123,7 @@ body{
 .herodiv{
 	margin: 10px auto;
 	position: relative;
-	width:960px;
+	max-width:960px;
 	height: 300px;
 }
 
@@ -155,7 +159,7 @@ body{
 .forcastdiv{
 	background: #EEE0CB;
 	
-	width: 960px;
+	max-width: 960px;
 	height: 150px;
 	margin: 20px auto;
 	position: relative;
@@ -220,7 +224,7 @@ body{
 .activitydiv{
 	margin: 20px auto;
 	position: relative;
-	width: 960px;
+	max-width: 960px;
 	height: 300px;
 	box-shadow: 0 0 10px #839788;
 	margin-top: 50px;
@@ -238,3 +242,21 @@ body{
 
 	padding: 0 0 0 30px;
 }
+/*map and social media***************/
+
+.contactdiv {
+    max-width: 960px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #EEE0CB;
+    color: #000000;
+    line-height: 2em;
+	box-shadow: 0 0 10px #839788;
+  }
+  .contactdiv a {
+    color: white;
+  }
+  .contactdiv a:visited {
+    color: rgb(240, 73, 64);
+  }
+	
