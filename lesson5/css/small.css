@@ -124,7 +124,7 @@ body{
 	margin: 10px auto;
 	position: relative;
 	max-width:960px;
-	height: 300px;
+	height: auto;
 }
 
 .hero-image img{
