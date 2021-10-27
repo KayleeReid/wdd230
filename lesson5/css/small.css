@@ -201,7 +201,7 @@ display: none;
 	font-weight: 700;
 	font-size: 1rem;
 	background-color: #BAA898;
-	color: white;
+	color: #000000;
 }
 
 .flex img {
@@ -249,10 +249,10 @@ padding: 0 10px;
 	box-shadow: 0 0 10px #839788;
   }
   .contactdiv a {
-    color: white;
+    color: #000000;
   }
   .contactdiv a:visited {
-    color: #839788;
+    color: red;
   }
   .map-image {
    display: none;
