@@ -36,6 +36,7 @@
 .activity-image {
 	float: right;
 	margin: -5px 20px 20px 20px;
+	width:20rem;
 }
 .activitydiv{
 	box-shadow: 0 0 10px #839788;
