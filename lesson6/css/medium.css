@@ -1,0 +1,97 @@
+@media only screen and (min-width: 32.5em) {
+	/*menu***/
+	
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    /*header***/
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+/*map and social media***************/
+
+	.map-image {
+		 display: block;
+		}
+		/*Article*************************************************/
+
+.activity-image{
+	float:right;
+	width:40%;
+		
+}
+.activitydiv{
+	box-shadow: 0 0 10px #839788;
+	padding: 20px;
+	text-align: left;
+}
+.activitydiv p {
+
+	padding: 0 0 0 30px;
+	
+	}
+/*Header CSS*******************************************/
+header img {
+	width: 175px;
+	padding-right: 25px;
+}
+
+/*Header CSS*******************************************/
+
+
+header img {
+	width: 175px;
+	padding-right: 25px;
+}
+
+
+.headings h1 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+
+	margin-left: 20px;
+	font-size: 1rem;
+	padding-top: 10px;
+}
+
+}
+	
+@media only screen and (min-width: 50em){
+/*Hero and Weather summary section**************************/
+
+.weathersummary{
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background: #EEE0CB;
+	padding:.5rem;
+	box-shadow: 0 0 30px #839788;
+	opacity: 0.9;
+	
+}
+.summarySmalldiv{
+	display: none;
+}
+}

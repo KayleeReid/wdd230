@@ -1,0 +1,274 @@
+/*Body CSS*********************************************/
+body {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	font-family: 'Hind Madurai', sans-serif;
+}
+/*Message that shows on fridays************************/
+.message{
+	display: none;
+	background-color: #839788;
+	padding:10px;
+	margin:10px auto;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*Header CSS*******************************************/
+header {
+	max-width: 1200px;
+	margin:auto;
+	background-color:#BFD7EA;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+header img {
+	width: 100px;
+	height: auto;
+	padding-left: 10px;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+margin-left: 15px;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: #000000;
+	margin-left: 20px;
+	font-size: .9rem;
+	margin: 0 5px;
+	text-align: center;
+}
+
+/*Menu list*******************************************/
+
+nav {
+	margin: 0 auto;
+	max-width: 1200px;
+	background-color: #BAA898;
+	padding: 2.5px;
+	font-weight: bold;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	background-color: #EEE0CB;
+}
+/* NOTE: The onclick JS toggles the .reponsive class from display none
+ (.navigation li) to display block because the responsive class is added
+  to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+/*NOTE: Shows active page.*/
+.active{
+	text-transform: uppercase;
+	
+	border-bottom: 1px solid #000000;
+}
+
+/*Main CSS************************************************/
+main{
+	max-width: 960px;
+	margin: auto;
+}
+h1{
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 2px 2px #839788;
+}
+h2{
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 1px 1px #839788;
+	padding-top: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+h3{
+	font-family: 'Permanent Marker', cursive;
+}
+
+
+
+footer {
+	max-width: 1200px;
+	margin:auto;
+	background-color:#BFD7EA;
+	padding: 2px 0;
+	align-items:center;
+	justify-content:center;
+	text-align: center;
+}
+
+/*Hero and Weather summary section**************************/
+.herodiv{
+	margin: 10px auto;
+	position: relative;
+	height: auto;
+}
+
+.hero-image {
+	
+	width:100%;
+	margin: 10px auto;
+}
+.hero-image img {
+	width: 100%;
+}
+.weathersummary{
+display: none;
+}
+
+.weathersummary p {
+	line-height: .5;
+}
+/*Weather Summary for the small view************************/
+.summarySmalldiv{
+		box-shadow: 0 0 10px #839788;
+		padding: 10px;
+		text-align: center;
+	
+}
+
+/*Five Day Forcast***********************/
+.forcastdiv{
+	background: #EEE0CB;
+	height: auto;
+	margin: 20px auto;
+	position: relative;
+	box-shadow: 0 0 10px #839788;
+	
+}
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+	padding: 0 20px;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: #BFD7EA;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	border-top: 1px solid #333;
+    border-right: 1px solid #333;
+	text-align: center;
+}
+ 
+.flex-col:hover {
+	
+	background-color: #EEE0CB;
+	color: #000000;
+}
+
+ .col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid ;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: #BAA898;
+	color: #000000;
+}
+
+.flex img {
+	border-radius: 100px;
+	padding: 0.25rem;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+ 
+/*Article*************************************************/
+.activitydiv{
+	box-shadow: 0 0 10px #839788;
+	padding: 20px;
+	text-align: center;
+}
+.activity-image {
+	width:55%;
+	border: solid #839788;
+	padding: 5px;
+	margin: auto;
+	
+}
+.activity-image img {
+	width: 100%;
+}
+.activitydiv p {
+
+padding: 0 10px;
+
+}
+
+/*Contact section:map and social media*******************/
+
+.contactdiv {
+    
+    margin: 20px auto;
+    text-align: center;
+    background-color: #EEE0CB;
+    color: #000000;
+    line-height: 2em;
+	box-shadow: 0 0 10px #839788;
+  }
+  .contactdiv a {
+    color: #000000;
+  }
+  .contactdiv a:visited {
+    color: red;
+  }
+  .map-image {
+   display: none;
+  }
+  .contactdiv h3{
+	  padding-top: 10px;
+	  margin: 0;
+  }
+  /*make items not calapse when it has a float in it **************/
+  .clearfix:after{
+	  content: "";
+	  display: table;
+	  clear: both;
+
+  }
+	
