@@ -146,10 +146,6 @@ footer {
 .hero-image img {
 	width: 100%;
 }
-.weathersummary{
-display: none;
-}
-
 .weathersummary p {
 	line-height: .5;
 }
@@ -165,8 +161,7 @@ display: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-/*Weather Summary for the small view************************/
-.summarySmalldiv{
+.weathersummary{
 		box-shadow: 0 0 10px #839788;
 		padding: 10px;
 		

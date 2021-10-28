@@ -75,11 +75,6 @@ header img {
 	padding-top: 10px;
 }
 
-}
-	
-@media only screen and (min-width: 50em){
-/*Hero and Weather summary section**************************/
-
 .weathersummary{
 	display: block;
 	position: absolute;
@@ -91,7 +86,5 @@ header img {
 	opacity: 0.9;
 	
 }
-.summarySmalldiv{
-	display: none;
-}
+
 }
