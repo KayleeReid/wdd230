@@ -10,9 +10,15 @@ else{
 }
 
 function calculateWindChill (t,w){
-    let x = 35.74 + (t *0.6215)
-    - (35.75 * Math.pow(w,0.16))
-    + (0.4275 * t * Math.pow(w,0.16 ));
+    let a = 35.74;
+    let b = 0.6215;
+    let c = 35.75;
+    let d = 0.16;
+    let e = 0.4275;
+
+    let x = a + (t * b)
+    - (c * Math.pow(w,d))
+    + (e * t * Math.pow(w,d ));
     return x.toFixed(0);
 }
 document.querySelector('.wChill').innerHTML = wChill + '°F';
