@@ -116,6 +116,7 @@ h2{
 }
 h3{
 	font-family: 'Permanent Marker', cursive;
+	text-align: center;
 }
 
 
@@ -152,11 +153,23 @@ display: none;
 .weathersummary p {
 	line-height: .5;
 }
+.l {
+	text-align: right;
+	margin-right: .5rem;
+}
+.r{
+	
+	margin-left: .5rem;
+}
+.sumGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 /*Weather Summary for the small view************************/
 .summarySmalldiv{
 		box-shadow: 0 0 10px #839788;
 		padding: 10px;
-		text-align: center;
+		
 	
 }
 

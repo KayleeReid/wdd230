@@ -17,6 +17,7 @@
     <script defer src="js/menu.js"></script>
     <script defer src="js/getdate.js"></script>
     <script defer src="js/pancakes.js"></script>
+    <script defer src="js/windchill.js"></script>
     
   </head>
 
@@ -38,36 +39,60 @@
       <ul class="navigation">
         <li><a class="ham" href="#">☰ Menu</a></li>
         <li><a href="#">Home</a></li>
-        <li class="active"><a href="#">Preston</a></li>
+        <li class="active"><a href="preston-6.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
       <h2>The town of Preston Idaho</h2>
       <div class="herodiv">
-        <figure class="hero-image">
-          <img src="images/landscape.jpg" alt="Farming Landscape Image" />
-        </figure>
-        <section class="weathersummary">
+        <picture class="hero-image">
+          <source srcset="images/small.jpg" media="(max-width: 520px)">
+          <source srcset="images/medium.jpg" media="(max-width: 940px)">
+          <source srcset="images/large.jpg" media="(min-width: 941px)">
+          <img src="images/landscape.jpg" alt="Farming Landscape Image">
+      </picture>
+                
+      <section class="weathersummary">
           <h3>Weather Summary</h3>
-          <p>Currently:</p>
-          <p>Temperature:</p>
-          <p>Humidity:</p>
-          <p>Precipitation:</p>
-          <p>Wind Speed:</p>
-        </section>
+          <div class = "sumGrid">
+            <span class="l">Conditions:</span>
+            <span class="r">Sunny</span>
+            <span class="l">Temperature:</span>
+            <span class="r">
+                <span class="temp">37</span>°F</span>
+            <span class="l">Wind Chill:</span>
+            <span class="r">
+                <span class="wChill"></span></span>
+            <span class="l">Humidity:</span>
+            <span class="r">42%</span>
+            <span class="l">Wind Speed:</span>
+            <span class="r">
+                <span class="wSpeed">9</span> mph</span>
+          </div>
+      </section>
       </div>
       
       <div class="summarySmalldiv">
-          <h3>Current Weather Summary</h3>
-          <p>Currently:</p>
-          <p>Temperature:</p>
-          <p>Humidity:</p>
-          <p>Precipitation:</p>
-          <p>Wind Speed:</p>
+        <h3>Weather Summary</h3>
+        <div class = "sumGrid">
+          <span class="l">Conditions:</span>
+          <span class="r">Sunny</span>
+          <span class="l">Temperature:</span>
+          <span class="r">
+              <span class="temp">76</span>°F</span>
+          <span class="l">Wind Chill:</span>
+          <span class="r">
+              <span class="wChill"></span></span>
+          <span class="l">Humidity:</span>
+          <span class="r">42%</span>
+          <span class="l">Wind Speed:</span>
+          <span class="r">
+              <span class="wSpeed">9</span> mph</span>
+        </div>
       </div>
 
 
