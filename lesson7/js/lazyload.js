@@ -1,5 +1,6 @@
 //get all images that need to be loading (data-src attribute)
-const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imagesToLoad = document.querySelectorAll("[data-src]");
 
 const imgOption = {
     threshold: 1,
