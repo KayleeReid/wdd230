@@ -280,3 +280,20 @@ padding: 0 10px;
 
   }
 	
+/*Gallery Page****************************************************/
+main{
+	text-align: center;
+}
+figure{
+	display: block;
+	max-width: fit-content;
+	background-color: #EEE0CB;
+	padding: 5px;
+	box-shadow: 0 0 0.5rem 0.25rem #404040;
+}
+.gallery-grid{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.gallery-grid figure:hover {
+    box-shadow: 0 0 0.5rem 0.75rem #404040;

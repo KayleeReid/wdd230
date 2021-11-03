@@ -87,4 +87,10 @@ header img {
 	
 }
 
+/*Gallery Page****************************************************/
+
+.gallery-grid{
+	grid-template-columns: 1fr 1fr;
+}
+
 }
