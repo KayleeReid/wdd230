@@ -16,17 +16,11 @@
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/menu.js"></script>
     <script defer src="js/getdate.js"></script>
-    <script defer src="js/pancakes.js"></script>
-    <script defer src="js/lazyload.js"></script>
     <script defer src="js/form.js"></script>
     
   </head>
 
   <body>
-    <div class="message">
-      🥞 PANCAKES this Saturday in the Park! 9:00 a.m. Saturday at the city park
-      pavilion.
-    </div>
     <header>
       <picture>
         <img src="images/newlogo.png" alt="Vantage Point 24/7 logo" />
@@ -48,25 +42,31 @@
           </ul>
     </nav>
     <main>
+      <h1>Report a Storm </h1>
+      <div class ="formDiv">
         <form method="get" action="thanks.html">
       <fieldset>
           <legend>Applicant Information</legend>
-          <label>Full Name*<input type="text" name = "fullName" required></label>
-          <label>Email*<input type="email" name = "email" placeholder="user@gmail.com" required></label>
-          <label>Phone Number*<input type="tel" name = "phoneN" required></label>
-          <label>Zip Code*<input type="number" name = "zipCode" required></label>
+          <label class="top">Full Name*<input type="text" name = "fullName" required></label>
+          <label class="top">Email*<input type="email" name = "email" placeholder="user@gmail.com" ></label>
+          <label class="top">Phone Number*<input type="tel" name = "phoneN" required></label>
+          <label class="top">Zip Code*<input type="number" name = "zipCode" required></label>
       </fieldset>
 
       <fieldset>
         <legend>Storm Information</legend>
-        <label>Storm Date<input type="date" name = "sDate" placeholder="mm / dd / yyyy"></label>
-        <div>Storm Type</div>
-        <label><input type="radio" name = "sType" value="flashflood"> Flash Flood</label>
-        <label><input type="radio" name = "sType" value="hail"> Hail</label>
-        <label><input type="radio" name = "sType" value="hurricane"> Hurricane</label>
-        <label><input type="radio" name = "sType" value="Thunderstorm"> Thunderstorm</label>
-        <label><input type="radio" name = "sType" value="Tornado"> Tornado</label>
-
+        <label class="top" for="type">Storm Type:</label>
+        <label class="top">
+      <input  list="types" name="stype" id="type">
+      <datalist id="types">
+          <option value="Flash Flood">
+          <option value="Hail">
+          <option value="Hurricane">
+          <option value="Thunderstorm">
+          <option value="Tornado">
+        </datalist>
+      </label>
+<label class="top">
         Storm Severity &nbsp;&nbsp;&nbsp;
         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         <span id="ratingvalue">5</span>
@@ -86,24 +86,24 @@
         <option value="10">
     </datalist>
 
-    <label>
+    <label class="top">
         <select name="region" id="sRegion" onchange="selectResponse()">
             <option value="" disabled selected>Select Storm Region</option>
             <option value="preston">Preston</option>
             <option value="sodasprings">Soda Springs</option>
             <option value="fishhaven">Fish Haven</option>
         </select></label>
+
+        <div>Are you in damger?</div>
+    <label class="sbs"><input type="radio" name = "ymn" value="Yes"> Yes</label>
+    <label class="sbs"><input type="radio" name = "ymn" value="Maybe"> Maybe</label>
+    <label class="sbs"><input type="radio" name = "ymn" value="No"> No</label>
+        <label class="top">Additional Information<input type="text" name = "info" ></label>
 </fieldset>
 
-<fieldset>
-    <legend>Additional Information</legend>
-
-        <label>Are you in Danger?<input type="text" name = "danger" required></label>
-        <label>Additional Information<input type="text" name = "info" required></label>
-       
-    </fieldset>
-<input type="submit" name="" id="">
+<input type="submit" name="report" value="Report Storm" class="submitBtn">
 </form>
+</div>
         
    
 
@@ -164,5 +164,6 @@
         }
       });
     </script>
+    
   </body>
 </html>
