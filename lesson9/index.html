@@ -4,28 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preston Idaho - Weather & Events</title>
-    <meta name="description" content="For all you Preston Idaho people, Find all your local events and weather news here. " />
+    <title>Vantage Point Home Page</title>
+    <meta name="description" content="Home Page of the Vantage Point weather site" />
     <meta name="author" content="Kaylee Reid"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-   
+    
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/menu.js"></script>
     <script defer src="js/getdate.js"></script>
-    <script defer src="js/pancakes.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <script defer src="js/index.js"></script>
+    <script type="text/javascript" src="towns.json"></script>
     
   </head>
 
   <body>
-    <div class="message">
-      🥞 PANCAKES this Saturday in the Park! 9:00 a.m. Saturday at the Preston city park
-      pavilion.
-    </div>
     <header>
       <picture>
         <img src="images/newlogo.png" alt="Vantage Point 24/7 logo" />
@@ -51,22 +47,14 @@
       <p>change image</p>
       <div class="herodiv">
         <picture class="hero-image">
-          <source srcset="images/preston-small.jpg" media="(max-width: 520px)">
-          <source srcset="images/preston-medium.jpg" media="(max-width: 940px)">
-          <source srcset="images/preston-large.jpg" media="(min-width: 941px)">
+          <source srcset="images/home-large.jpg" media="(max-width: 520px)">
+          <source srcset="images/home-large.jpg" media="(max-width: 940px)">
+          <source srcset="images/home-large.jpg" media="(min-width: 941px)">
           <img src="images/preston-large.jpg" alt="Farming Landscape Image">
       </picture>     
       </div>
 
-      <div class="townInfo">
-        <div class="preston">
-            <h3>Preston</h3>
-            <h4>Home of Napoleon Dynamite</h4>
-            <p>Year Founded:</p>
-        </div>
-        <div class="fishhaven"></div>
-        <div class="sodasprings"></div>
-      </div>
+      <div class="cards"></div>
 
      
       <div class="contactdiv">
