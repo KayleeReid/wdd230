@@ -29,4 +29,12 @@
 form label.sbs{
   padding:.4rem 0;
 }
+/*HOME Page*************************************************************/
+.townInfo section{
+	
+}
+.townInfo{
+	
+	grid-template-columns: 1fr 1fr 1fr;
+}
 }

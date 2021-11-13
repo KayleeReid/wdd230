@@ -17,7 +17,7 @@ body {
 
 /*Header CSS*******************************************/
 header {
-	max-width: 1200px;
+	max-width: 1400px;
 	margin:auto;
 	background-color:#BFD7EA;
 	padding: 5px 0;
@@ -56,7 +56,7 @@ margin-left: 15px;
 
 nav {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1400px;
 	background-color: #BAA898;
 	padding: 2.5px;
 	font-weight: bold;
@@ -100,7 +100,7 @@ nav {
 
 /*Main CSS************************************************/
 main{
-	max-width: 960px;
+	max-width: 1200px;
 	margin: auto;
 }
 h1{
@@ -122,7 +122,7 @@ h3{
 
 
 footer {
-	max-width: 1200px;
+	max-width: 1400px;
 	margin:auto;
 	background-color:#BFD7EA;
 	padding: 2px 0;
@@ -363,4 +363,21 @@ form label.top input:required:valid{
 	box-shadow: 0 0 10px #839788;
 padding: 10px 30px;
 
+}
+
+/*HOME Page*************************************************************/
+.townInfo section{
+	box-shadow: 0 0 10px #839788;
+	
+}
+.townInfo{
+	display: grid;
+	grid-template-columns: 1fr
+}
+
+/*Calendar*8**********************************************/
+.calendar{
+	box-shadow: 0 0 10px #839788;
+	padding: 5px;
+	margin:20px 0;
 }
