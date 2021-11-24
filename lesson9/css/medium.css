@@ -93,6 +93,22 @@ header img {
 	grid-template-columns: 1fr 1fr;
 }
 /*HOME Page*************************************************************/
-
-
+.townInfo section{
+flex-direction: row;
 }
+
+
+.article img{
+	float: right;
+	max-width: 25%;
+	margin: 0px 5px;
+}
+.townInfo img {
+	width: 50%;
+	margin: 30px;
+}
+section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+}
+

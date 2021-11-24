@@ -368,12 +368,16 @@ padding: 10px 30px;
 /*HOME Page*************************************************************/
 .townInfo section{
 	box-shadow: 0 0 10px #839788;
+	padding:20px;
+	display: flex;
+	flex-direction: column;
 	
 }
-.townInfo{
-	display: grid;
-	grid-template-columns: 1fr
+
+.townInfo q {
+	font-weight: bold;
 }
+
 
 /*Calendar*8**********************************************/
 .calendar{
@@ -381,3 +385,4 @@ padding: 10px 30px;
 	padding: 5px;
 	margin:20px 0;
 }
+

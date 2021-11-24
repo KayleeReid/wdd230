@@ -15,27 +15,31 @@ fetch(requestURL)
       
       //this creates the elements in HTML
       let card = document.createElement("section");
+      let info = document.createElement ('info');
       let h2 = document.createElement("h2");
-      let h3 = document.createElement("h3");
+      let motto = document.createElement("q");
       let year = document.createElement("p");
       let pop = document.createElement("p");
       let rain = document.createElement("p");
       let img = document.createElement("img");
 
       h2.innerHTML = `${town.name}`;
-      h3.innerHTML = `${town.motto}`;
+      motto.innerHTML = `${town.motto}`;
       year.innerHTML = `Year Founded: ${town.yearfounded}`;
       pop.innerHTML= `Population: ${town.currentPopulation}`;
      rain.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`
-      img.setAttribute ('src', town.photo);
+      img.setAttribute ('src', `images/${town.photo}`);
 
-      card.appendChild(h2);
-      card.appendChild(h3);
-      card.appendChild(year);
-      card.appendChild(pop);
-      card.appendChild(rain);
+      info.appendChild(h2);
+      info.appendChild(motto);
+      info.appendChild(year);
+      info.appendChild(pop);
+      info.appendChild(rain);
+      card.appendChild(info);
       card.appendChild(img);
 
       document.querySelector("div.townInfo").appendChild(card);
     });
   });
+
+ 
