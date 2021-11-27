@@ -250,6 +250,17 @@
   color: #fff !important;
   background-image: linear-gradient(135deg, #8d8dd4, #45ced4);
 }
+.button-exit{
+  box-shadow: 0 5px 15px gray;
+  background-color: #BFD7EA;
+  padding: 10px;
+  padding-left: 3em;
+  padding-right: 3em;
+  cursor: pointer;
+  border-radius: 25px;
+  color: #fff !important;
+  background-image: linear-gradient(135deg, #8d8dd4, #45ced4);
+}
 
 .addEvent:hover {
   transition: box-shadow 0.5s;
