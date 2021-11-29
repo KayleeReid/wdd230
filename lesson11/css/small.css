@@ -282,10 +282,10 @@ main{
 }
 figure{
 	display: block;
-	max-width: fit-content;
+	
 	background-color: #EEE0CB;
 	box-shadow: 0 0 0.5rem 0.25rem #839788;
-	margin:15px 20px 15px 20px;
+	
 }
 .gallery-grid{
 	display: grid;
