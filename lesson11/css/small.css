@@ -3,7 +3,7 @@ body {
 	background-color: white;
 	padding: 0;
 	margin: 0;
-	font-family: 'Hind Madurai', sans-serif;
+	
 }
 /*Message that shows on fridays************************/
 .message{
@@ -113,6 +113,7 @@ h2{
 h3{
 	font-family: 'Permanent Marker', cursive;
 	text-align: center;
+	padding-top: 20px;
 }
 
 
@@ -165,10 +166,9 @@ footer {
 }
 
 /*Five Day Forcast***********************/
-.forcastdiv{
+.forecast{
 	background: #EEE0CB;
 	height: auto;
-	margin: 20px auto;
 	position: relative;
 	box-shadow: 0 0 10px #839788;
 	
@@ -180,6 +180,7 @@ footer {
 	/* let us combine row and wrap with flow */
 	flex-flow: row wrap;
 	padding: 0 20px;
+	margin-bottom: 20px;
 }
 
 .flex-col {
@@ -232,12 +233,8 @@ footer {
 	width:55%;
 	border: solid #839788;
 	padding: 5px;
-	margin: auto;
-	
 }
-.activity-image img {
-	width: 100%;
-}
+
 .activitydiv p {
 
 padding: 0 10px;

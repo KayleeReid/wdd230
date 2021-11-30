@@ -78,12 +78,15 @@ header img {
 .weathersummary{
 	display: block;
 	position: absolute;
-	top: 50px;
+	top: 20px;
 	left: 50px;
 	background: #EEE0CB;
 	padding:.5rem;
 	box-shadow: 0 0 30px #839788;
 	opacity: 0.9;
+	font-weight: 800;
+	font-size: larger;
+
 	
 }
 
