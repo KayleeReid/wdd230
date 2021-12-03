@@ -10,12 +10,14 @@ if (cityPage === "The town of Preston Idaho"){
   cityURL = `http://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=789014a950c83560c0a72965a5dfd442`
   // FishHaven city = "5585010"
 };
+
  
 const apiURL = cityURL;
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
    
+    
 
     document.querySelector('#C').textContent = jsObject.weather[0].main;
     document.querySelector('#temp').textContent = `${jsObject.main.temp.toFixed(0)} ℉`;
