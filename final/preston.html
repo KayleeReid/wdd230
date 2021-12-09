@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston Idaho - Weather & Events</title>
+    <meta name="description" content="For all you Preston Idaho people, Find all your local events and weather news here. " />
+    <meta name="author" content="Kaylee Reid"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+   
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/getdate.js"></script>
+    <script defer src="js/pancakes.js"></script>
+    <script defer src="js/weatherapi.js"></script>
+    <script defer src="js/forecast.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="message">
+      🥞 PANCAKES this Saturday in the Park! 9:00 a.m. Saturday at the Preston city park
+      pavilion.
+    </div>
+    <header>
+      <picture>
+        <img src="images/newlogo.png" alt="Vantage Point 24/7 logo" />
+      </picture>
+      <section class="headings">
+        <h1>Vantage Point 24/7</h1>
+        <div class="m">Preston's one stop shop for weather and events</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">☰ Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>The Town of Preston Idaho</h2>
+      <div class="herodiv">
+        <picture class="hero-image">
+          <source srcset="images/preston-small.jpg" media="(max-width: 520px)">
+          <source srcset="images/preston-medium.jpg" media="(max-width: 940px)">
+          <source srcset="images/preston-large.jpg" media="(min-width: 941px)">
+          <img src="images/preston-large.jpg" alt="Farming Landscape Image">
+      </picture>
+                
+      <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <div class = "sumGrid">
+            <span class="l" >Conditions:</span>
+            <span class="r" id="C"></span>
+            <span class="l">Temperature:</span>
+          
+            <span class="r" id="temp"></span>
+            <span class="l">Wind Chill:</span>
+            <span class="r" id="wChill">N/A</span>
+            <span class="l">Humidity:</span>
+            <span class="r" id="H"></span>
+            <span class="l">Wind Speed:</span>
+            <span class="r" id="wSpeed"></span>
+          </div>
+      </section>
+      </div>
+
+
+      <div class="forecast">
+        <h3>Five Day Forecast</h3>
+        <div class="flex">
+            <div class="flex-col">
+                <span class="col-head" id="weekday1"></span>
+                <img id="icon1" src="#" alt="#">
+                <span class="condition" id="forecast1">Sunny °F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head" id="weekday2"></span>
+                <img id="icon2" src="#" alt="#">
+                <span class="condition" id="forecast2">Sunny °F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head" id="weekday3"></span>
+                <img id="icon3" src="#" alt="#">
+                <span class="condition" id="forecast3">Sunny °F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head" id="weekday4"></span>
+                <img id="icon4" src="#" alt="#">
+                <span class="condition" id="forecast4">Sunny °F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head" id="weekday5"></span>
+                <img id="icon5" src="#" alt="#">
+                <span class="condition" id="forecast5">Sunny °F</span>
+            </div>
+        </div>
+    </div>
+    <div class= "clearfix activitydiv">
+      <figure class="activity-image">
+        <img src="images/preston-event.jpg" alt="Man caught a large fish" />
+      </figure>
+      
+      <h2>Upcoming Events</h2>
+      <ul class="events">
+        <li>March 29th: Work Creek Revival.</li>
+        <li>July 8th-12th: Napoleon Dynamite Festival.</li>
+        <li>November 2-4: Freedom Days.</li>
+      </ul>
+    </div>
+
+      <div class= "clearfix activitydiv">
+        <figure class="activity-image">
+          <img src="images/familyhike.jpg" alt="Mother and her son hiking" />
+        </figure>
+        
+        <h2>Hiking & Backpacking</h2>
+        <p>
+          Whether you’re looking for a weeklong adventure in the wilderness or a quick afternoon stroll beside a crystal-clear lake, rest assured that you’ll find a trail to meet your adventure style in the Gem State. Idaho’s numerous trails vary in length, skill level and scenery, attracting adventurers from across the globe.
+        </p>
+        <p>
+          Visit <a href="https://visitidaho.org/things-to-do/hiking-backpacking/?gclid=Cj0KCQiAtJeNBhCVARIsANJUJ2GeygMSwttLa7Il6CwSjwfli9mU_klSSoAyhdXI7dhB9JtZqnKuzuIaAlFVEALw_wcB">visitidaho.org</a> for more informatiton about trails and their dificulty in the area.
+        </p>
+      </div>
+
+      <div class="contactdiv">
+        <h3>Contact Us</h3>
+        <picture class="map-image">
+        <img
+          src="images/preston-map.jpg"
+          alt="map of Preston Idaho"
+          width="300"
+        />
+        </picture>
+        <div class="contactInfo">
+        <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.099747,-111.880325,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173"
+          >📍 Preston, ID 83263</a
+        >
+        <div>📞 (555)555-5555</div>
+        <div>✉  vantagepoint247@gmail.com</div>
+        <div>
+          <a target='blank' href="https://www.facebook.com/"
+          ><img
+            src="images/facebook.png"
+            alt="facebook icon"
+            
+          /></a>
+          <a target='blank' href="https://www.instagram.com/"
+          ><img
+            src="images/instagram.png"
+            alt="instagram icon"
+          /></a>
+          <a target='blank' href="https://twitter.com/"
+          ><img src="images/twitter.png" 
+          alt="twitter icon" 
+          /></a>
+          <a target='blank' href="https://www.youtube.com/"
+          ><img
+            src="images/youtube.png"
+            alt="youtube icon"
+          /></a>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        ©<span id="copyrightyear"></span> | Vantage Point 24/7 | Idaho Reginal
+        News | Attributions: Weather by <a href="https://openweathermap.org">OpenWeatherMap</a> , Hiking info by <a href="https://visitidaho.org/things-to-do/hiking-backpacking/?gclid=Cj0KCQiAtJeNBhCVARIsANJUJ2GeygMSwttLa7Il6CwSjwfli9mU_klSSoAyhdXI7dhB9JtZqnKuzuIaAlFVEALw_wcB">visitidaho.org</a> | Est. 2021
+      
+      </p>
+      <p><span id="cDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Hind Madurai", "Permanent Marker"]
+        }
+      });
+    </script>
+  </body>
+</html>
