@@ -49,19 +49,30 @@
 	
 	}
 /*Header CSS*******************************************/
-header img {
-	width: 175px;
-	padding-right: 25px;
-}
 
 /*Header CSS*******************************************/
 
-
-header img {
-	width: 175px;
-	padding-right: 25px;
+.purpose{
+	box-shadow: 0 0 10px #2A3132;
+	padding: 0px 100px 20px 100px;
+	text-align: center;
+	margin: 20px 0;
+}
+#busadv{
+	
+	box-shadow: 0 0 10px #2A3132;
+	padding: 0px 60px 20px 60px;
+	text-align: center;
+	
 }
 
+#allweather{
+	
+	box-shadow: 0 0 10px #2A3132;
+	padding: 0px 60px 20px 60px;
+	text-align: center;
+
+}
 
 .headings h1 {
 	font-size: 1.6rem;
@@ -75,20 +86,7 @@ header img {
 	padding-top: 10px;
 }
 
-.weathersummary{
-	display: block;
-	position: absolute;
-	top: 20px;
-	left: 50px;
-	background: #EEE0CB;
-	padding:.5rem;
-	box-shadow: 0 0 30px #839788;
-	opacity: 0.9;
-	font-weight: 800;
-	font-size: larger;
 
-	
-}
 
 /*Gallery Page****************************************************/
 
@@ -96,7 +94,7 @@ header img {
 	grid-template-columns: 1fr 1fr;
 }
 /*HOME Page*************************************************************/
-.townInfo section{
+.businessInfo section{
 flex-direction: row;
 }
 
@@ -106,14 +104,14 @@ flex-direction: row;
 	max-width: 25%;
 	margin: 0px 5px;
 }
-.townInfo img {
+.businessInfo img {
 	width: 50%;
 	margin: 30px;
 }
 section:nth-child(even) {
     flex-direction: row-reverse;
 }
-.townInfo section info{
+.businessInfo section info{
 	margin:auto;
 }
 }

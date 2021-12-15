@@ -1,15 +1,9 @@
 let cityURL = "";
 let cityPage = document.querySelector("h2").textContent;
-if (cityPage === "The Town of Preston Idaho") {
+
   cityURL = `https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=789014a950c83560c0a72965a5dfd442`
   // Preston city = "5604473"
-} else if (cityPage === "The Town of Soda Springs Idaho") {
-  cityURL = `https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=789014a950c83560c0a72965a5dfd442`
-  // SodaSprings city = "5607916"
-} else if (cityPage === "The Town of Fish Haven Idaho") {
-  cityURL = `https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=789014a950c83560c0a72965a5dfd442`
-  // FishHaven city = "5585010"
-};
+
 
 
 

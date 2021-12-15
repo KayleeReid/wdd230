@@ -1,42 +1,43 @@
 /*Body CSS*********************************************/
 body {
 	background-color: white;
-	padding: 0;
-	margin: 0;
-	
 }
-/*Message that shows on fridays************************/
-.message{
-	display: none;
-	background-color: #839788;
-	padding:10px;
-	margin:10px auto;
-	font-size: 20px;
-	text-align: center;
+/*business logo slide**********************************/
+.moving-logo-wrapper{
+	max-width: 9000px;
+	overflow: hidden;
+	margin: auto;
 }
-
+.moving-logo-inner img{
+	background:  0/contain repeat-x;
+	height: 200px;
+	width:3700px;
+	-webkit-animation: moving-logos 40s linear infinite;
+	animation: moving-logos 40s linear infinite;
+}
+@keyframes moving-logos{
+	0%{
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+	100%{
+		-webkit-transform: translate3d(-2500px,0,0);
+		transform: translate3d(-2500px,0,0);
+	}
+}
 /*Header CSS*******************************************/
-header {
+
+header{
 	max-width: 1400px;
-	margin:auto;
-	background-color:#BFD7EA;
-	padding: 5px 0;
-	display: flex;
-	align-items:center;
-	justify-content:center;
+	margin: 0 auto;
+	border: 10px solid #763626;
 }
-
 header img {
-	width: 100px;
+display: block;
+	width: 25%;
 	height: auto;
-	padding-left: 10px;
-}
-
-
-
-.headings h1 {
-	font-size: 1.5rem;
-margin-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .m {
@@ -49,17 +50,17 @@ margin-left: 15px;
 }
 
 /*Menu list*******************************************/
-
+.quickLinks{background-color: black;
+color: white;}
 nav {
 	margin: 0 auto;
 	max-width: 1400px;
-	background-color: #BAA898;
+	background-color: #90AFC5;
 	padding: 2.5px;
 	font-weight: bold;
 }
 .navigation {
 	list-style: none;
-	padding: 0;
 }
 .navigation li:first-child {
 	display: block;
@@ -77,20 +78,16 @@ nav {
 	transition: 0.5s;
 }
 .navigation a:hover {
-	background-color: #EEE0CB;
+	background-color: #2A3132;
+	color: white;
 }
-/* NOTE: The onclick JS toggles the .reponsive class from display none
- (.navigation li) to display block because the responsive class is added
-  to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
+
 .responsive li {
 	display: block;
 }
 /*NOTE: Shows active page.*/
 .active{
 	text-transform: uppercase;
-	
 	border-bottom: 1px solid #000000;
 }
 
@@ -99,29 +96,17 @@ main{
 	max-width: 1200px;
 	margin: auto;
 }
-h1{
-	font-family: 'Permanent Marker', cursive;
-	text-shadow: 2px 2px #839788;
-}
-h2{
-	font-family: 'Permanent Marker', cursive;
-	text-shadow: 1px 1px #839788;
-	padding-top: 15px;
-	text-align: center;
-	font-weight: bold;
-}
+
 h3{
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Courier New', cursive;
 	text-align: center;
 	padding-top: 20px;
 }
 
-
-
 footer {
 	max-width: 1400px;
 	margin:auto;
-	background-color:#BFD7EA;
+	background-color:#90AFC5;
 	padding: 2px 0;
 	align-items:center;
 	justify-content:center;
@@ -129,19 +114,20 @@ footer {
 }
 
 /*Hero and Weather summary section**************************/
-.herodiv{
-	margin: 10px auto;
-	position: relative;
-	height: auto;
-}
 
 .hero-image {
 	
 	width:100%;
 	margin: 10px auto;
 }
+button{
+	background-color: #763626;
+	color: white;
+}
 .hero-image img {
+	margin-top: 10px;
 	width: 100%;
+	box-shadow: 0 0 10px #2A3132;
 }
 .weathersummary p {
 	line-height: .5;
@@ -159,20 +145,26 @@ footer {
 	grid-template-columns: 1fr 1fr;
 }
 .weathersummary{
-		box-shadow: 0 0 10px #839788;
-		padding: 10px;
+		box-shadow: 0 0 10px #2A3132;
+		padding-bottom: 20px;
+		background-color: #763626;
+		color: white;
+		font-weight: bold;
+		font-size: larger;
 		
 	
 }
 
-/*Five Day Forcast***********************/
+/*three Day Forcast***********************/
 .forecast{
-	background: #EEE0CB;
+	color: black;
+	font-weight: bold;
 	height: auto;
 	position: relative;
-	box-shadow: 0 0 10px #839788;
+	box-shadow: 0 0 10px #2A3132;
 	
 }
+
 
 .flex {
 	display: flex;
@@ -185,7 +177,7 @@ footer {
 
 .flex-col {
 	flex: 1 1 auto;
-	background-color: #BFD7EA;
+	background-color: #90AFC5;
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
 	border-top: 1px solid #333;
@@ -206,8 +198,8 @@ footer {
 	text-align: center;
 	font-weight: 700;
 	font-size: 1rem;
-	background-color: #BAA898;
-	color: #000000;
+	background-color: #763626;
+	color: white;
 }
 
 .flex img {
@@ -225,7 +217,7 @@ footer {
  
 /*Article*************************************************/
 .activitydiv{
-	box-shadow: 0 0 10px #839788;
+	box-shadow: 0 0 10px #2A3132;
 	padding: 20px;
 	text-align: center;
 	margin: 20px 0;
@@ -241,6 +233,13 @@ footer {
 padding: 0 10px;
 
 }
+.purpose{
+	box-shadow: 0 0 10px #2A3132;
+	
+	
+	
+}
+
 
 /*Contact section:map and social media*******************/
 
@@ -248,10 +247,20 @@ padding: 0 10px;
     
     margin: 20px auto;
     text-align: center;
-    background-color: #EEE0CB;
+    
     color: #000000;
     line-height: 2em;
-	box-shadow: 0 0 10px #839788;
+	box-shadow: 0 0 10px #2A3132;
+  }
+  .eventdiv{
+	margin: 20px auto;
+    text-align: center;
+    
+    color: #000000;
+    line-height: 2em;
+	box-shadow: 0 0 10px #2A3132;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
   }
   .contactdiv a {
     color: #000000;
@@ -360,7 +369,7 @@ padding: 10px 30px;
 }
 
 /*HOME Page*************************************************************/
-.townInfo section{
+.businessInfo section{
 	box-shadow: 0 0 10px #839788;
 	padding:20px;
 	display: flex;
@@ -369,7 +378,7 @@ padding: 10px 30px;
 	
 }
 
-.townInfo q {
+.businessInfo q {
 	font-weight: bold;
 }
 
@@ -384,4 +393,7 @@ padding: 10px 30px;
 
 .events{
 	font-size: larger;
+}
+section img{
+	width:1px;
 }

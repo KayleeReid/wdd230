@@ -8,9 +8,24 @@
   .contactdiv h3 {
     grid-column: 1/3;
   }
+  .eventdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+  }
+  .eventInfo{
+    margin-left: -100px;
+  }
+  .event-image{
+    margin-right: -200px;
+  }
+  .eventdiv h3 {
+    grid-column: 1/3;
+  }
   .map-image {
     text-align: right;
   }
+ 
   .contactInfo {
     grid-column: 2/3;
     text-align: left;
@@ -21,7 +36,7 @@
 .gallery-grid{
 	grid-template-columns: 1fr 1fr 1fr;
 }
-.townInfo section {
+.businessInfo section {
 	grid-column:span 1;
 }
 .gallery-grid figure:hover {
@@ -33,15 +48,15 @@ form label.sbs{
   padding:.4rem 0;
 }
 /*HOME Page*************************************************************/
-.townInfo section{
+.businessInfo section{
   align-items: center;
   flex-direction: column;
 }
-.townInfo{
+.businessInfo{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.townInfo img{
+.businessInfo img{
   width: 90%;
   margin: 15px;
 }
