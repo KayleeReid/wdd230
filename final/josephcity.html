@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph City Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Home Page of Joseoh City's Chamber of Commerce site"
+    />
+    <meta name="author" content="Kaylee Reid" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/getdate.js"></script>
+    <script defer src="js/weatherapi.js"></script>
+    <script defer src="js/forecast.js"></script>
+    
+  </head>
+
+  <body>
+    <header>
+      <picture>
+        <img src="images/newlogo.png" alt="Vantage Point 24/7 logo" />
+      </picture>
+      
+      <nav>
+        <ul class="navigation">
+          <li><a class="ham" href="#">☰ Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="josephcity.html">Joseph City</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Member Login</a></li>
+          <li><a href="join.html">Join Today</a></li>
+          <li><a href="directory.html">Directory</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="purpose">
+        <h2>About Joseph City</h2>
+        <p>Population: 1,672 (2019)</p>
+        <p>Elevation: 5,000ft</p>
+        <p>County: Navajo County</p>
+        <p>Location: On Interstate 40</p>
+        <p>famous Route 66 Landmark: The Jack Rabbit Trading Post </p>
+      </div>
+      <div class= "clearfix activitydiv">
+        <figure class="activity-image">
+          <img src="images/jc.jpg" alt="Mother and her son hiking" />
+        </figure>
+        
+        <h2>The History of Joseph City!</h2>
+        <p>
+          Joseph City was settled in 1876 by colonists who were members of The Church of Jesus Christ of Latter-day Saints. This band of 73 pioneers was led by Captain William C. Allen.[4] They traveled to the Little Colorado River basin of Arizona. Joseph City was one of four Little Colorado River colonies.[5] The other colonies were Brigham City, Sunset, and Obed. Joseph City is the only remaining colony.
+        </p>
+        <p>
+          The hardest trial for the new colonists was trying to get water for their crops. This meant that they had to try to tame the Little Colorado River. This was difficult due to the flooding season that would destroy dams along the river. The first dam was built in 1876, shortly after the colonists arrived in the area. For the next 18 years the colonists built ten more dams. The eleventh dam was built in 1894. This dam lasted for 29 years. In 1923, the eleventh dam was destroyed and the colonists were forced to build a new dam. This dam still currently stands and directs water to the inhabitants still in the city.
+        </p>
+        <p>
+          The name of the colony changed twice since its colonization. The area settled by Captain Allen's group was called Allen's Camp, in honor of their leader. There was a name change in January 1878 to St. Joseph. This change was brought about when the Little Colorado Stake was organized. This name was suggested in order to honor Joseph Smith, founder of the Latter Day Saint movement. In 1923 there was a final name change to Joseph City. Due to mail and freight shipment confusions, the Santa Fe Railway, that also ran through Saint Joseph, Missouri, asked that St. Joseph, Arizona change its name. The residents of the town voted and the name became Joseph City.
+        </p>
+      </div>
+      
+      
+  
+      <div class="contactdiv">
+        <h3>Contact Us</h3>
+        <picture class="map-image">
+          <img src="images/map.jpg" alt="map of Joseph City" width="300" />
+        </picture>
+        <div class="contactInfo">
+          <a
+            href="https://www.google.com/maps/place/Joseph+City,+AZ+86032/@34.9655028,-110.3670526,13z/data=!3m1!4b1!4m5!3m4!1s0x872e4db3867b0e15:0x967a14a319ff01c4!8m2!3d34.955996!4d-110.3313027"
+            >📍 Joseph City, AZ 86032</a
+          >
+          <div>📞 (928)288-3255</div>
+          <div>✉ josephcity@gmail.com</div>
+          <div>📦 P.O Box 36972 Joseph City, AZ 86032-0036</div>
+
+          <div>
+            <a target="blank" href="https://www.facebook.com/"
+              ><img src="images/facebook.png" alt="facebook icon"
+            /></a>
+            <a target="blank" href="https://www.instagram.com/"
+              ><img src="images/instagram.png" alt="instagram icon"
+            /></a>
+            <a target="blank" href="https://twitter.com/"
+              ><img src="images/twitter.png" alt="twitter icon"
+            /></a>
+            <a target="blank" href="https://www.youtube.com/"
+              ><img src="images/youtube.png" alt="youtube icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        ©<span id="copyrightyear"></span> | Joseph City Chamber of Commerce |
+        Settled 1876 | <a href="https://openweathermap.org">Attributions</a>
+      </p>
+      <p><span id="cDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Hind Madurai", ""],
+        },
+      });
+    </script>
+  </body>
+</html>
