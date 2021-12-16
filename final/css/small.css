@@ -114,6 +114,17 @@ footer {
 }
 
 /*Hero and Weather summary section**************************/
+.cards{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+section{
+    max-width: 100%;
+margin:5px;
+}
+
 
 .hero-image {
 	

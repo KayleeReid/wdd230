@@ -85,7 +85,9 @@
 	font-size: 1rem;
 	padding-top: 10px;
 }
-
+.cards{
+	grid-template-columns: 1fr 1fr ;
+}
 
 
 /*Gallery Page****************************************************/

@@ -65,4 +65,7 @@ form label.sbs{
   width: 90%;
   margin: 15px;
 }
+.cards{
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+} 
 }
